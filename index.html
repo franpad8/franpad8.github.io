@@ -1,23 +1,445 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Startuprr</title>
+	<link rel="shortcut icon" type="image/png" href="static/img/favicon.png"/>
+	<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+	<div id="banner">
+		<img src="static/img/home-bg.jpg" width="100%" height="100%" alt="Background image">
+		<div class="wrapper">
+			<div class="banner-layout">
+				<p id="banner-text">What are you waiting for ?</p>
+				<p id="banner-slogan">Let's be Creative</p>
+				<label class="banner-label"><span><span class="green">S</span>tartuprr,</span> Next Generation & Highly Flexible Wordpress Theme</label>
+				<br>
+				<label id="banner-cta-text">
+				<img src="static/img/icon-left.png" alt="Icon Left">
 
-<div class="home">
+					<span class="green">Start</span> Doing That
+				<img src="static/img/icon-right.png" alt="Icon Right">
+				<div class="banner-cta-lines left">
+						<hr class="horizontal-line"/>
+						<hr class="horizontal-line"/>
+				</div>
 
-  <h1 class="page-heading">Posts</h1>
+				<div class="banner-cta-lines right">
+						<hr class="horizontal-line"/>
+						<hr class="horizontal-line"/>
+				</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+				</label>
+					
+				<label id="banner-cta-button">
+					
+				</label>
+				
+			</div>
+		</div>
+	</div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+	<header id="header">
+		<div class="wrapper">
+			<h1 class="section-title-hidden">Startuprr</h1>
+			<img id="nav-logo" src="static/img/logo.png" alt="Startuprr Logo">
+			<nav class="navbar">
+			    <ul>
+			        <li><a href="#">Home</a></li><!--
+			     --><li><a href="#">Portfolio</a></li><!--
+			     --><li><a href="#">Blog</a></li><!--
+			     --><li><a href="#">Pages</a></li>
+			     	<li><a href="#">Features</a></li>
+			     	<li><a href="#">Mega Menu</a></li>
+			     	<li><a href="#">Contact</a></li>
+			    </ul>
+			</nav>
+		</div>
+	</header><!-- /header -->
+	<hr>
+	<section id="what-we-offer" class="section section-light">
+		<div class="wrapper">
+			<h2 class="section-title">What We <label class="green">Offer</label></h2>
+			<p class="section-description">We offer our costumer the best services & solutions, this our main services list</p>
+			<section class="subsection col-3">
+				<img src="static/img/icon-pc.png" alt="Pc Icon" class="sub-section-icon lg">
+				<h3 class="subsection-title text-center">Response & Multipurpose</h3>
+				<p class="subsection-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, odit!</p>
+				<button type="button" class="cta-btn">Read More</button>
+			</section>
+			<section class="subsection col-3">
+				<img src="static/img/icon-puzzle.png" alt="Puzzle Icon" class="sub-section-icon lg">
+				<h3 class="subsection-title text-center">Easy Customization</h3>
+				<p class="subsection-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, quis.</p>
+				<button type="button" class="cta-btn cta-btn-green">Read More</button>
+			</section>
+			<section class="subsection col-3">
+				<img src="static/img/icon-ball.png" alt="Ball Icon" class="sub-section-icon lg">
+				<h3 class="subsection-title text-center">Awesome Friendly Support</h3>
+				<p class="subsection-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, blanditiis.</p>
+				<button type="button" class="cta-btn">Read More</button>
+			</section>
+		</div>
+	</section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	<hr class="section-separator">
 
-</div>
+	<section id="amazing-features" class="section section-dark">
+		<div class="wrapper">
+			<h2 class="section-title">Amazing <label class="green">Features</label></h2>
+			<p class="section-description">With unlimited features that we offer, who promise to make everything that was impossible for you !</p>
+			<section class="subsection text-left">
+				<img src="static/img/icon-pc-dark.png" alt="Pc Icon" class="sub-section-icon icon-pull-left">
+				<h3 class="subsection-title">Responsive & Multipurpose</h3>
+				<p class="subsection-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, blanditiis.</p>
+			</section>
+			<section class="subsection text-left">
+				<img src="static/img/icon-puzzle-dark.png" alt="Puzzle Icon" class="sub-section-icon icon-pull-left">
+				<h3 class="subsection-title">Easy Customization</h3>
+				<p class="subsection-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, blanditiis.</p>
+			</section>
+			<section class="subsection text-left">
+				<img src="static/img/icon-star-dark.png" alt="Ball Icon" class="sub-section-icon icon-pull-left">
+				<h3 class="subsection-title">Unlimited Features</h3>
+				<p class="subsection-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, blanditiis.</p>
+			</section>
+			<img id="tablets-img" src="static/img/tablets.png" alt="Puzzle Icon" width="600px" height="400px">
+		</div>
+	</section>
+
+	<section id="points-of-sale" class="section section-light">
+		<div class="wrapper">
+			<section class="subsection col-3">
+					<img src="static/img/flag-pc.png" alt="Responsive Multipurpose" class="sub-section-icon icon-pull-left lg">
+					<h3 class="subsection-title text-left">Response & Multipurpose</h3>
+					<p class="subsection-caption text-left">Desktop tablets & Phones</p>
+					<p class="subsection-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat adipisci harum repudiandae sit debitis alias?</p>
+			</section>
+			<section class="subsection col-3">
+					<img src="static/img/flag-puzzle.png" alt="Easy Customization" class="sub-section-icon icon-pull-left lg">
+					<h3 class="subsection-title text-left">Easy Customization</h3>
+					<p class="subsection-caption text-left">One Click Demo Content Installation</p>
+					<p class="subsection-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat adipisci harum repudiandae sit debitis alias?</p>
+			</section>
+			<section class="subsection col-3">
+					<img src="static/img/flag-star.png" alt="Unlimited Features" class="sub-section-icon icon-pull-left lg">
+					<h3 class="subsection-title text-left">Unlimited Features</h3>
+					<p class="subsection-caption text-left">Shortcodes, Typography & Different Layouts</p>
+					<p class="subsection-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat adipisci harum repudiandae sit debitis alias?</p>
+			</section>
+			<section class="subsection col-3">
+					<img src="static/img/flag-code.png" alt="Clean Code" class="sub-section-icon icon-pull-left lg">
+					<h3 class="subsection-title text-left">Clean & Modular Coding</h3>
+					<p class="subsection-caption text-left">100% Clean, Valid & Well-Commented Coding</p>
+					<p class="subsection-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat adipisci harum repudiandae sit debitis alias?</p>
+			</section>
+			<section class="subsection col-3">
+					<img src="static/img/flag-commerce.png" alt="E-Commerce" class="sub-section-icon icon-pull-left lg">
+					<h3 class="subsection-title text-left">The Best E-Commerce Solutions</h3>
+					<p class="subsection-caption text-left">WooCommerce Fully Integration</p>
+					<p class="subsection-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat adipisci harum repudiandae sit debitis alias?</p>
+			</section>
+			<section class="subsection col-3">
+					<img src="static/img/flag-ball.png" alt="Friendly Suppoert" class="sub-section-icon icon-pull-left lg">
+					<h3 class="subsection-title text-left">Awesome Friendly Support</h3>
+					<p class="subsection-caption text-left">Free Lifetime Support & Updates</p>
+					<p class="subsection-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat adipisci harum repudiandae sit debitis alias?</p>
+			</section>
+		</div>
+	</section>
+
+	<hr class="section-separator">
+
+	<section id="our-powerful-skills" class="section section-dark">
+		<div class="wrapper">
+			<h2 class="section-title">Our Powerful <label class="green">Skills</label></h2>
+			<p class="section-description">We're good and experienced at different things and areas and we promise about quality of our works</p>
+			<div class="loader">
+				<label class="loader-top"><b>75</b><small>%</small></label>
+				<h3 class="subsection-title text-center">Web Design</h3>
+			</div>
+			<div class="loader">
+				<label class="loader-top"><b>92</b><small>%</small></label>
+				<h3 class="subsection-title text-center">Web Development</h3>
+			</div>
+			<div class="loader">
+				<label class="loader-top"><b>68</b><small>%</small></label>
+				<h3 class="subsection-title text-center">Speed Optimization</h3>
+			</div>
+			<div class="loader">
+				<label class="loader-top"><b>100</b><small>%</small></label>
+				<h3 class="subsection-title text-center">Customer Support</h3>
+			</div>
+			<div class="loader">
+				<label class="loader-top"><b>83</b><small>%</small></label>
+				<h3 class="subsection-title text-center">Marketing</h3>
+			</div>
+			<div class="loader">
+				<label class="loader-top"><b>50</b><small>%</small></label>
+				<h3 class="subsection-title text-center">Advertisement</h3>
+			</div>
+		</div>
+	</section>
+
+	<!-- Sample work -->
+	<section id="sample-work" class="section section-light">
+		<h2 class="section-title">Sample <label class="green">Work</label></h2>
+		<p class="section-description">Let's take a look at some of the best of our works here, we love them and hope you too</p>
+		<div class="boxes">
+			<div class="box"></div>
+			<div class="box bkg-green">
+				<img src="static/img/box-img.png" alt="Corporate Brochure Logo" class="box-img">
+				<h4 class="box-title">Corporate Brochure</h4>
+				<br>
+				<p>Ilustration / Print</p>
+				<br>
+				<label class="box-icon-likes"></label>138
+			</div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+		<div class="wrapper">
+			<button type="button" class="cta-btn cta-btn-green cta-btn-lg">View all Works</button>
+
+		</div>
+	</section>
+
+	<hr class="section-separator">
+
+	<section id="company-facts" class="section section-dark">
+		<h2 class="section-title">Company <label class="green">Facts</label></h2>
+		<p class="section-description">We do love to work and increase our counter numbers, this is what we've done till now</p>
+		<div class="wrapper">
+			<div class="fact">
+				<p class="fact-number">218</p>
+				<span class="fact-icon"></span>
+				<h4 class="fact-title">Completed Projects</h4>
+			</div>
+			<div class="fact">
+				<p class="fact-number">360</p>
+				<span class="fact-icon"></span>
+				<h4 class="fact-title">Hours Of Work<small>/Month</small></h4>
+			</div>
+			<div class="fact">
+				<p class="fact-number">135</p>
+				<span class="fact-icon"></span>
+				<h4 class="fact-title">Solved Tickets</h4>
+			</div>
+			<div class="fact">
+				<p class="fact-number">174</p>
+				<span class="fact-icon"></span>
+				<h4 class="fact-title">Satisfied Clients</h4>
+			</div>
+		</div>
+	</section>
+	<section id="purchase-contact" class="section section-green">
+		<div class="wrapper">
+			<h2 class="subsection-title">Are you satisfied with unlimited features that we offer?</h2>
+			<button class="cta-btn cta-btn-md cta-btn-light">Contact Us Now</button>
+			<button class="cta-btn cta-btn-md cta-btn-light">Purchase It Now</button>
+		</div>
+	</section>
+
+	<!-- Sample work -->
+	<section id="team-members" class="section section-light">
+		<div class="wrapper">
+			<h2 class="section-title"><label class="green">Team</label> Members</h2>
+			<p class="section-description">We're some creative people with powerful knowledge & awesome skills behind the scenes bringing you the bests</p>
+			<i class="icon icon-previous icon-dark"></i>
+			<i class="icon icon-next icon-green"></i>
+
+			<div class="member-card">
+				<div class="member-card-header">		
+				</div>
+				<div class="member-card-details text-center">
+					<button class="cta-btn cta-btn-md cta-btn-green">Alexis Simpson</button>
+					<p class="member-card-position">CEO & Developer</p>
+					<p class="member-card-detail"><img src="static/img/icon-email.png"></img>a.simpson@unique.com</p>
+					<p class="member-card-detail"><img src="static/img/icon-phone.png"></img>+1 911 (77) 222-1111</p>
+				</div>
+			</div>
+			<div class="member-card">
+				<div class="member-card-header text-center">
+					<img src="static/img/team-member-img.png" class="member-card-pic" alt="Member Pic"></img>
+				</div>
+				<div class="member-card-details text-center">
+					<button class="cta-btn cta-btn-md cta-btn-dark">Steven Cole</button>
+					<p class="member-card-position">User Interface Designer</p>
+					<p class="member-card-detail"><img src="static/img/icon-email.png"></img>s.cole@unique.com</p>
+					<p class="member-card-detail"><img src="static/img/icon-phone.png"></img>+1 911 (77) 222-1111</p>
+				</div>
+			</div>
+			<div class="member-card">
+				<div class="member-card-header">		
+				</div>
+				<div class="member-card-details text-center">
+					<button class="cta-btn cta-btn-md cta-btn-green">Frank Piener</button>
+					<p class="member-card-position">Sales Manager</p>
+					<p class="member-card-detail"><img src="static/img/icon-email.png"></img>f.piener@unique.com</p>
+					<p class="member-card-detail"><img src="static/img/icon-phone.png"></img>+1 911 (77) 222-1111</p>
+				</div>
+			</div>
+			<div class="member-card">
+				<div class="member-card-header">		
+				</div>
+				<div class="member-card-details text-center">
+					<button class="cta-btn cta-btn-md cta-btn-green">Ashley Lennon</button>
+					<p class="member-card-position">IT Specialist</p>
+					<p class="member-card-detail"><img src="static/img/icon-email.png"></img>a.lennon@unique.com</p>
+					<p class="member-card-detail"><img src="static/img/icon-phone.png"></img>+1 911 (77) 222-1111</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr class="section-separator section-separator-dark">
+
+	<!-- Testimony Section -->
+	<section id="testimony" class="section section-green">
+		<div class="wrapper text-center">
+			<button type="button" class="witness cta-btn cta-btn-md cta-btn-light">Alexis Simpson <span>- CEO & Developer</span></button>
+			<blockquote class="quote">
+				<p><span>"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus perferendis necessitatibus, dolor ipsa ipsam aliquam reprehenderit placeat harum molestiae explicabo quaerat veniam ratione maiores optio cumque ab, vitae voluptatum quas laudantium asperiores. <span>"</span></p>
+			</blockquote>
+			<i class="icon icon-previous icon-light"></i>
+			<i class="icon icon-next icon-dark"></i>
+		</div>
+	</section>
+
+	<!-- Partners Section -->
+	<section id="partners" class="section section-dark">
+		<div class="wrapper">
+			<i class="icon icon-previous icon-light"></i>
+				<div id="scenthound" class="partner"></div>
+				<div id="vividways" class="partner"></div>
+				<div id="hobnob" class="partner"></div>
+				<div id="burnaboh" class="partner"></div>
+			<i class="icon icon-next icon-green"></i>
+		</div>
+	</section>
+
+	<!-- Prices Section -->
+	<section id="prices" class="section section-light text-center">
+		<div class="wrapper">
+			<h2 class="section-title">Real Cheap <label class="green">Members</label></h2>
+			<p class="section-description">We offer all our services in real low prices in comparison with similar companies</p>
+			<div class="plan">
+				<button class="cta-btn cta-btn-md cta-btn-dark plan-name">Standard Plan</button>
+				<div class="plan-price-box">
+					<p>$<span class="dollars">19</span><span class="cents">99</span>Monthly</p>
+				</div>
+				<div class="plan-attributes-box">
+					<ul>
+					    <li>5 Projects</li>
+					    <li>5GB Storage</li>
+					    <li>Unlimited Users</li>
+					    <li>10GB Bandwidth</li>
+					    <li>Enhanced Security</li>
+					</ul>
+				</div>
+				<button class="cta-btn cta-btn-md cta-btn-green">Sign Up Now</button>
+			</div>
+			<div class="plan">
+				<button class="cta-btn cta-btn-md cta-btn-green plan-name">Premium Plan</button>
+				<div class="plan-price-box">
+					<p>$&nbsp<span class="dollars">29</span><span class="cents">99</span>Monthly</p>
+				</div>
+				<div class="plan-attributes-box">
+					<ul>
+						<li>10 Projects</li>
+					    <li>15GB Storage</li>
+					    <li>Unlimited Users</li>
+					    <li>20GB Bandwidth</li>
+					    <li>Enhanced Security</li>
+					</ul>
+					
+				</div>
+				<button class="cta-btn cta-btn-md cta-btn-green">Sign Up Now</button>
+			</div>
+			<div class="plan">
+				<button class="cta-btn cta-btn-md cta-btn-dark plan-name">Advanced Plan</button>
+				<div class="plan-price-box">
+					<p>$&nbsp<span class="dollars">49</span><span class="cents">99</span>Monthly</p>
+				</div>
+				<div class="plan-attributes-box">
+					<ul>
+						<li>15 Projects</li>
+					    <li>30GB Storage</li>
+					    <li>Unlimited Users</li>
+					    <li>50GB Bandwidth</li>
+					    <li>Enhanced Security</li>
+					</ul>
+				</div>
+				<button class="cta-btn cta-btn-md cta-btn-green">Sign Up Now</button>
+			</div>
+			<div class="plan">
+				<button class="cta-btn cta-btn-md cta-btn-dark plan-name">Ultimate Plan</button>
+				<div class="plan-price-box">
+					<p>$&nbsp<span class="dollars">99</span><span class="cents">99</span>Monthly</p>
+				</div>
+				<div class="plan-attributes-box">
+					<ul>
+					    <li>Unlimited Projects</li>
+					    <li>Unlimited Storage</li>
+					    <li>Unlimited Users</li>
+					    <li>Unlimited Bandwidth</li>
+					    <li>Enhanced Security</li>
+					</ul>
+				</div>
+				<button class="cta-btn cta-btn-md cta-btn-green">Sign Up Now</button>
+			</div>
+		</div>
+	</section>
+
+
+	
+	<section id="social-media" class="section section-dark">
+		<div class="wrapper">
+			<div class="social-media-wrapper">
+				<img class="logo-dark" src="static/img/logo-dark.png" alt="Startuprr Logo Dark">
+				<ul class="social-media-list">
+					<li class="icon-facebook"></li>
+					<li class="icon-twitter"></li>
+					<li class="icon-pinterest"></li>
+					<li class="icon-podcast"></li>
+					<li class="icon-vimeo"></li>
+					<li class="icon-youtube"></li>
+					<li class="icon-linkedin"></li>
+					<li class="icon-dribbble"></li>
+					<li class="icon-chrome"></li>
+					<li class="icon-stumbleupon"></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="section section-light">
+		<form class="contact-form">
+			<input type="text" placeholder="Name">
+			<input type="email" placeholder="Email Address">
+			<textarea rows="5" cols="50" placeholder="Mensaje..."></textarea>
+			<button type="button" class="cta-btn cta-btn-green cta-btn-lg">Submit Message</button>
+		</form>
+	</section>
+
+	<hr class="section-separator">
+	<!-- Footer Styling -->
+	<footer>
+		<section id="footer" class="section section-dark">
+			<p class="section-description">Copyright &copy 2014 Startuprr, All rights reserved</p>
+		</section>
+	</footer>
+
+	
+</body>
+</html>
